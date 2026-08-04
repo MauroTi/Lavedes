@@ -19,9 +19,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\..\src\Lavedes.Domain\Lavedes.Domain.csproj" />
-    <ProjectReference Include="..\..\src\Lavedes.Application\Lavedes.Application.csproj" />
-    <ProjectReference Include="..\..\src\Lavedes.Infrastructure\Lavedes.Infrastructure.csproj" />
+    <ProjectReference Include="..\..\src\Lavedes\Lavedes.csproj" />
   </ItemGroup>
 
 </Project>

@@ -1,19 +1,16 @@
 # Lavedes
 
-Base da loja virtual de uniformes e vestuário com HTML/Razor (`.cshtml`), C#, JavaScript, CSS e MySQL.
+Loja virtual de uniformes e vestuário com HTML/Razor (`.cshtml`), C#, JavaScript, CSS e MySQL.
 
-O acesso ao banco será feito em C# com `MySqlConnector` e SQL explícito, sem Entity Framework e sem outro ORM.
+O acesso ao banco será feito em C# com `MySqlConnector` e SQL explícito, sem Entity Framework, Dapper ou outro ORM.
 
-## Estrutura
+## Estrutura simplificada
 
-- `src/Lavedes.Domain`: entidades, regras e contratos centrais.
-- `src/Lavedes.Application`: casos de uso, DTOs, validações e interfaces.
-- `src/Lavedes.Infrastructure`: MySQL, arquivos, identidade e integrações externas.
-- `src/Lavedes.Web`: loja pública, painel administrativo e API HTTP.
+- `src/Lavedes`: aplicação ASP.NET Core completa.
 - `tests/Lavedes.Tests`: testes automatizados.
-- `docs`: documentação técnica e decisões de arquitetura.
+- `src/Lavedes/Documentation`: documentação técnica.
 
-Consulte [docs/ARQUITETURA.md](docs/ARQUITETURA.md) para o planejamento completo.
+Consulte [src/Lavedes/Documentation/ARQUITETURA.md](src/Lavedes/Documentation/ARQUITETURA.md) para o planejamento completo.
 
 ## Comandos iniciais
 
@@ -21,5 +18,5 @@ Consulte [docs/ARQUITETURA.md](docs/ARQUITETURA.md) para o planejamento completo
 dotnet restore
 dotnet build
 dotnet test
-dotnet run --project src/Lavedes.Web
+dotnet run --project src/Lavedes
 ```
