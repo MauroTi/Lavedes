@@ -12,8 +12,9 @@ Nesta etapa foi criado somente o esqueleto compilável da solução. Banco de da
 - Razor Pages para as páginas públicas, favorecendo SEO;
 - HTML semântico, CSS e JavaScript modular;
 - endpoints Web API para o painel e futuras integrações;
-- MySQL com Entity Framework Core e migrations;
-- ASP.NET Core Identity para autenticação e permissões;
+- MySQL acessado com `MySqlConnector` e SQL explícito;
+- Dapper opcional somente para execução e mapeamento de consultas;
+- autenticação por cookies do ASP.NET Core com usuários e permissões persistidos por repositórios próprios;
 - armazenamento externo de imagens em produção;
 - implantação futura em Linux, preferencialmente com Docker.
 
@@ -29,7 +30,7 @@ Orquestra os casos de uso. Conterá DTOs, comandos, consultas, validadores e int
 
 ### Lavedes.Infrastructure
 
-Implementará persistência MySQL, Identity, repositórios, armazenamento de imagens, pagamento, frete, WhatsApp e envio de mensagens.
+Implementará persistência MySQL sem ORM, repositórios SQL, autenticação, armazenamento de imagens, pagamento, frete, WhatsApp e envio de mensagens.
 
 ### Lavedes.Web
 
@@ -80,10 +81,9 @@ O projeto Domain não deve depender de banco, framework web ou integrações ext
 
 1. Definir identidade visual, categorias e regras comerciais.
 2. Modelar entidades e relacionamentos do banco.
-3. Configurar MySQL, EF Core, migrations e Identity.
+3. Configurar MySQL, `MySqlConnector`, repositórios e scripts SQL versionados.
 4. Criar catálogo e galeria pública.
 5. Criar autenticação e painel administrativo.
 6. Implementar orçamento, carrinho, checkout e pedidos.
 7. Integrar imagens, pagamento, frete e WhatsApp.
 8. Adicionar testes, Docker, observabilidade e publicação.
-
