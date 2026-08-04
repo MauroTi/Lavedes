@@ -1,0 +1,11 @@
+<Solution>
+  <Folder Name="/src/">
+    <Project Path="src/Lavedes.Application/Lavedes.Application.csproj" />
+    <Project Path="src/Lavedes.Domain/Lavedes.Domain.csproj" />
+    <Project Path="src/Lavedes.Infrastructure/Lavedes.Infrastructure.csproj" />
+    <Project Path="src/Lavedes.Web/Lavedes.Web.csproj" />
+  </Folder>
+  <Folder Name="/tests/">
+    <Project Path="tests/Lavedes.Tests/Lavedes.Tests.csproj" />
+  </Folder>
+</Solution>
