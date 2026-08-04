@@ -8,12 +8,13 @@ Nesta etapa foi criado somente o esqueleto compilável da solução. Banco de da
 
 ## 2. Tecnologias definidas
 
-- .NET 10 e ASP.NET Core;
-- Razor Pages para as páginas públicas, favorecendo SEO;
-- HTML semântico, CSS e JavaScript modular;
+- C# com .NET 10 e ASP.NET Core;
+- HTML/Razor (`.cshtml`) para as páginas públicas, favorecendo SEO;
+- CSS responsivo;
+- JavaScript modular para as interações no navegador;
 - endpoints Web API para o painel e futuras integrações;
 - MySQL acessado com `MySqlConnector` e SQL explícito;
-- Dapper opcional somente para execução e mapeamento de consultas;
+- sem Entity Framework, Dapper ou outro ORM;
 - autenticação por cookies do ASP.NET Core com usuários e permissões persistidos por repositórios próprios;
 - armazenamento externo de imagens em produção;
 - implantação futura em Linux, preferencialmente com Docker.

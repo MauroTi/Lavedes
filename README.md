@@ -1,6 +1,8 @@
 # Lavedes
 
-Base da loja virtual de uniformes e vestuário, organizada para ASP.NET Core, Razor Pages, JavaScript e MySQL.
+Base da loja virtual de uniformes e vestuário com HTML/Razor (`.cshtml`), C#, JavaScript, CSS e MySQL.
+
+O acesso ao banco será feito em C# com `MySqlConnector` e SQL explícito, sem Entity Framework e sem outro ORM.
 
 ## Estrutura
 
@@ -21,4 +23,3 @@ dotnet build
 dotnet test
 dotnet run --project src/Lavedes.Web
 ```
-
